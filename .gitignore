@@ -1,0 +1,12 @@
+# Go 项目 .gitignore
+/server
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+coverage.out
+/tmp/
+/vendor/
