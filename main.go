@@ -66,3 +66,5 @@ func main() {
 	log.Printf("🚀 Server starting on :%s (version: %s, commit: %s)", port, Version, GitCommit)
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
+
+// CI/CD test push
