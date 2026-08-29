@@ -40,7 +40,7 @@ func healthHandler(w http.ResponseWriter, r *http.Request) {
 		Uptime:    time.Since(startTime).Round(time.Second).String(),
 	}
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(resp)
+	_ = json.NewEncoder(w).Encode(resp)
 }
 
 func helloHandler(w http.ResponseWriter, r *http.Request) {

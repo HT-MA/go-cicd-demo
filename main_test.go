@@ -61,7 +61,7 @@ func TestHelloHandler(t *testing.T) {
 func TestRootHandler(t *testing.T) {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("Go CI/CD Demo App - vdev\n"))
+		_, _ = w.Write([]byte("Go CI/CD Demo App - vdev\n"))
 	})
 
 	req := httptest.NewRequest("GET", "/", nil)
